@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-
+import Button from "../components/Button"
 
 export const Landing = () => {
     const navigate = useNavigate()
@@ -14,12 +14,12 @@ export const Landing = () => {
                     <p className="mb-6">
                         Join players from around the world. Free. Fast. Fun.
                     </p>
-                    <button onClick={()=>{navigate("/game")}} className="bg-green-500 font-semibold hover:bg-green-600 text-xl px-6 py-3 rounded-xl cursor-pointer">
+                    <Button onClick={()=>{navigate("/game")}}>
                         <div className="flex gap-2">
                             <img src="https://www.chess.com/bundles/web/images/color-icons/play-white.svg" className="w-7 h-7"/>
                             <span >Play Now</span>
                         </div>                    
-                    </button>
+                    </Button>
                 </div>
             </main>
 
