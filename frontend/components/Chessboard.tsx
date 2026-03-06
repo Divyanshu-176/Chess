@@ -17,7 +17,7 @@ const Chessboard = ({board, socket, setBoard, chess}:{
   const [from, setFrom] = useState<Square | null>(null)
 
   return (
-    <div className="text-black ml-40">
+    <div className="text-black ml-10">
       {board.map((row,i)=>{
         return <div key={i} className="flex">
             {row.map((square,j)=>{
