@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MOVE } from "../screens/Game";
-import { Chess, type Color, type PieceSymbol, type Square } from "chess.js";
+import { type Color, type PieceSymbol, type Square } from "chess.js";
 
 
 const Chessboard = ({board, socket, setBoard, chess}:{
@@ -47,7 +47,7 @@ const Chessboard = ({board, socket, setBoard, chess}:{
                 }} key={j} className={`w-20 h-20  ${(i+j)%2 === 0 ? 'bg-[#EBECD0]' : "bg-[#779556]"}`}>
                     <div className="w-full justify-center flex h-full">
                         <div className="h-full justify-center flex flex-col">
-                            {square ? square.type : ""}
+                            {square ? <img  className="" src={`/assets/${square?.color === "w" ? square?.type: `${square?.type?.toUpperCase()} copy`}.png`} /> : null }
                         </div>
                         
                     </div>
