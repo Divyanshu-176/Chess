@@ -11,7 +11,7 @@ A real-time multiplayer chess game built with a React frontend and a Node.js Web
 
 ## Architecture
 
-### Backend (`backend1/`)
+### Backend (`backend/`)
 - Built with Node.js and TypeScript
 - Uses WebSocket for real-time communication
 - Integrates `chess.js` for game logic and validation
@@ -30,6 +30,7 @@ A real-time multiplayer chess game built with a React frontend and a Node.js Web
 ![Chess Game Screenshot 2](Chess/2.png)
 
 ## Demo
+Tap to see full demo
 
 ![Chess Game Demo](Chess/chess.gif)
 
