@@ -31,10 +31,8 @@ A real-time multiplayer chess game built with a React frontend and a Node.js Web
 
 ## Demo Video
 
-<video width="640" height="480" controls>
-  <source src="Chess/chess.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<video src="./Chess/chess.mp4" width="600" controls></video>
+
 
 ## Getting Started
 
